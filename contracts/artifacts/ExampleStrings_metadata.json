@@ -6,27 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "decrementUint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "incrementUint8",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myUint",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_myString",
+						"type": "string"
+					}
+				],
+				"name": "compareTwoStrings",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint256"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -34,12 +26,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "myUint8",
+				"name": "myBites",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "bytes",
 						"name": "",
-						"type": "uint8"
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -48,12 +53,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_myUint",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_myString",
+						"type": "string"
 					}
 				],
-				"name": "setMyUint",
+				"name": "setMyString",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -72,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleWrapAround.sol": "ExampleUint"
+			"contracts/ExampleStrings.sol": "ExampleStrings"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +91,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ExampleWrapAround.sol": {
-			"keccak256": "0x12984daaf22a80dada7f72a4c72d385d6ffc94afaa4cedf574fc9a435f2fde9a",
+		"contracts/ExampleStrings.sol": {
+			"keccak256": "0x58df722da8ebdcae84e419353998d9adce2355821b6bfc95659c3cee07100a66",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://987ff6327adeee54c121a1f5f723be233799f79e0f51881097c40dbfbfbf472c",
-				"dweb:/ipfs/QmdGXoFBnwByDGjpimfgTZveXPdfLSCPbLmUjXCudkAbhV"
+				"bzz-raw://264d9daf1defa28912d28c5f6b0448c7f0f55866d352d48beaea1d20eb21b812",
+				"dweb:/ipfs/QmVvvkGmitf32i54ZjAoqD7xtBiJt4veaeUkbdC5DBPyG7"
 			]
 		}
 	},
