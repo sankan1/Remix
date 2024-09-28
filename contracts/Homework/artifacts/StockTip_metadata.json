@@ -85,11 +85,11 @@
 	},
 	"sources": {
 		"contracts/Homework/StockTip.sol": {
-			"keccak256": "0xa15e06684071d383d405ffe6fed45990c7a793c9ec6c9d2d52da840dd27512c3",
+			"keccak256": "0x5ebbf6a084f32077aed9f8e4529af5ab7ce673a36eec9d16c1126314d60187d1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://edba7c5c10c1f4435f796e42ea60406c79dd6306c19cdcf0a296b18cf35de37d",
-				"dweb:/ipfs/QmchfUQ6FuqQbbs89sTBWLbpjHVjQFFPkgMi8xNPxosKow"
+				"bzz-raw://1ca3b91a71f2c688458526a7bcbb80be2671935aff11bbb30af11395424c0baf",
+				"dweb:/ipfs/QmbKYftXHXvG3kzx3hoKpB5QnrdSJ6qU9PEszo8zi1VmKG"
 			]
 		}
 	},
