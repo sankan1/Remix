@@ -10,7 +10,7 @@ contract SampleFallback {
         lastValueSent = msg.value;
         lastFunctionCalled = "receive";
     }
-
+    // receive called when low level interaction called, fallback called when no other function was called.
     fallback() external payable {
         lastValueSent = msg.value;
         lastFunctionCalled = "fallback";

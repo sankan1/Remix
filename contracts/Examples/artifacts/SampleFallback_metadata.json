@@ -68,11 +68,11 @@
 	},
 	"sources": {
 		"contracts/Examples/SampleFallback.sol": {
-			"keccak256": "0xe9e351e618a684a97803ad07203f7b5589a910cf59fca324902891e6494f4c16",
+			"keccak256": "0xc17d4698a14c091f25afa65d47b1c4cff9fe0611abab568d1427df37c789a1cf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4da633e2bf6d0a8ea0c016177537be28d7294c5517d2854b9668f7d7ee36e89",
-				"dweb:/ipfs/QmTvKaDa9gtSTe1iw1VRsaU1LUcWwDhYwXv24SiT4nWd61"
+				"bzz-raw://e6941af56e83f10d21d90b3d7cac63f3f62472f2d058cc49225193aa6c190190",
+				"dweb:/ipfs/QmUrqzUF1hDkjuERABQLqVxzQZuxqgdY7zeGYCzjEUEGaR"
 			]
 		}
 	},
