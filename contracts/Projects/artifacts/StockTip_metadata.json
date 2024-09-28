@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newFreeTip",
+						"type": "string"
+					}
+				],
+				"name": "changeFreeStockTip",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newPaidTip",
+						"type": "string"
+					}
+				],
+				"name": "changePaidStockTip",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getStockTip",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawContractBalance",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Projects/StockTip.sol": "StockTip"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Projects/StockTip.sol": {
+			"keccak256": "0x6f4d325d2388c89278302257c7dbec7b2502804229d07e127f0ca6549b3a7d8a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d63caeaa7c50327f2b67c4b5867ead0ea19e8e5b43c0a1fc76990cc504cfbe51",
+				"dweb:/ipfs/QmebdMdEDLSnmXYTyq9bBi1sg48ZttYLtGJ2ni1AE35zUB"
+			]
+		}
+	},
+	"version": 1
+}
