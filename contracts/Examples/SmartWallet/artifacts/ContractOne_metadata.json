@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressBalances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Examples/SmartWallet/ExampleSendTransfer.sol": "ContractOne"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Examples/SmartWallet/ExampleSendTransfer.sol": {
+			"keccak256": "0x08580b3adbb67f49ee5a831a5e8383e82c2d59c825db569f1b0b0e17420b278e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://74af36fc94ad80832deb928064b68923854e5429d238c1ddff4fe8022946a881",
+				"dweb:/ipfs/QmevMoN4SHuQ9vguNPNbt4ZXd683d7mTnKv4qMaX46uTL6"
+			]
+		}
+	},
+	"version": 1
+}
