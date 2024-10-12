@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "NotAllowedError",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "aFn",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Examples/SmartWallet/ExampleTryCatch.sol": "WillThrow"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Examples/SmartWallet/ExampleTryCatch.sol": {
+			"keccak256": "0xff3dd48676bbc851fa7c621cd27d8e87cb31636b84142576e5c6f90aa2155672",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f25efa247c03b2671f5495aac5da4139e207a969fcb2b6429dc8fcf5df72ada",
+				"dweb:/ipfs/Qmf6TKwLtpjSk88jzmc4jRTLW7aShCEcyALfXDfC6XhMzj"
+			]
+		}
+	},
+	"version": 1
+}
