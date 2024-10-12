@@ -54,6 +54,7 @@ contract SmartWallet {
 
         (bool success, bytes memory returnData) = _to.call{value:_amount, gas:100000}(_payload);
         require(success, "Aborting, call not successful");
+        // returned because if someone calls this from another smart contract, he gets the message hex
         return returnData;
     }
 

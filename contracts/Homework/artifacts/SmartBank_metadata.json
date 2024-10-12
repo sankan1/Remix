@@ -18,11 +18,21 @@
 						"type": "address"
 					}
 				],
-				"name": "allowance",
+				"name": "accounts",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "depositedEth",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "generatedInterest",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentLoan",
 						"type": "uint256"
 					}
 				],
@@ -31,7 +41,14 @@
 			},
 			{
 				"inputs": [],
-				"name": "confirmationsFromGuardiansForReset",
+				"name": "depositEth",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "interest",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -40,88 +57,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					}
-				],
-				"name": "denySending",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "guardian",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isAllowedToSend",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "newOwner",
-						"type": "address"
-					}
-				],
-				"name": "proposeNewOwner",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "setAllowance",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -135,21 +70,56 @@
 						"internalType": "uint256",
 						"name": "_amount",
 						"type": "uint256"
-					},
-					{
-						"internalType": "bytes",
-						"name": "_payload",
-						"type": "bytes"
 					}
 				],
-				"name": "transfer",
-				"outputs": [
+				"name": "makePayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
-						"internalType": "bytes",
-						"name": "",
-						"type": "bytes"
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
 					}
 				],
+				"name": "payInterestOnDeposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "receiveInterestPayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_interest",
+						"type": "uint256"
+					}
+				],
+				"name": "setDepositInterest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawEth",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -171,7 +141,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Projects/SmartWallet.sol": "SmartWallet"
+			"contracts/Homework/SmartBank.sol": "SmartBank"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -185,12 +155,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Projects/SmartWallet.sol": {
-			"keccak256": "0x012051a76a598675f220118ea48eb5680c68b1839e33c70aa2afd4c98337f6bb",
+		"contracts/Homework/SmartBank.sol": {
+			"keccak256": "0x58fe47826450f88f00f69acf965430af4ff12eb3c8f57d525c8c07cc38a4c866",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://03f1cdc1fd7386b294792bf57b4c69bbdc7fb2385c045297f30f48a5b4f476a8",
-				"dweb:/ipfs/Qmf7mJCMuWuxQbYZUk6qZtwx2X2XkiiB96uj7nY2P6rr7X"
+				"bzz-raw://843fae03bd348d2083733704b2d9f3ade6cea460ca2789764e5486b30f1d967c",
+				"dweb:/ipfs/Qmf2BomyL69M6NPS9VMKnyYQBvpuRXKbaN7i4prwzamqXe"
 			]
 		}
 	},
