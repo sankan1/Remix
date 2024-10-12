@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "constructor"
 			},
 			{
@@ -44,6 +44,24 @@
 				"name": "depositEth",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "giveLoan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -86,6 +104,13 @@
 					}
 				],
 				"name": "payInterestOnDeposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payOffLoan",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -156,11 +181,11 @@
 	},
 	"sources": {
 		"contracts/Homework/SmartBank.sol": {
-			"keccak256": "0x58fe47826450f88f00f69acf965430af4ff12eb3c8f57d525c8c07cc38a4c866",
+			"keccak256": "0x4a2b24814a5907cc4dab7c09e8454aa4bc88ead0e02c806769d46393763153aa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://843fae03bd348d2083733704b2d9f3ade6cea460ca2789764e5486b30f1d967c",
-				"dweb:/ipfs/Qmf2BomyL69M6NPS9VMKnyYQBvpuRXKbaN7i4prwzamqXe"
+				"bzz-raw://d72fd11da392f6d5d234e567793188f932c6a654f6b72e52a8711859127594a6",
+				"dweb:/ipfs/QmTP8MfJbXxbJ4GvgVZdPFWZnwV16mafS7EPPRWSibxNXo"
 			]
 		}
 	},

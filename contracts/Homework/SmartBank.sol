@@ -15,7 +15,7 @@ contract SmartBank {
 
     mapping(address => BankAccount) public accounts;
 
-    constructor() {
+    constructor() payable {
         owner = payable(msg.sender);
     }
 
@@ -25,7 +25,7 @@ contract SmartBank {
     }
 
     function withdrawEth(uint _amount) public {
-        require(msg.sender != owner, "Only the client can deposit ETH!");
+        require(msg.sender != owner, "Only the client can withdraw ETH!");
         require(_amount <= address(this).balance, "Can't withdraw more than the bank account balance!");
 
         accounts[msg.sender].depositedEth -= _amount;
@@ -62,6 +62,35 @@ contract SmartBank {
         uint interestToSendOut = accounts[msg.sender].generatedInterest;
         accounts[msg.sender].generatedInterest = 0;
         payable(msg.sender).transfer(interestToSendOut);
+    }
+
+    function giveLoan(address payable _to, uint _amount) public {
+        require(msg.sender == owner, "Only the owner can give loans!");
+        require(_amount <= address(this).balance, "Not enough funds in the contract to give the loan!");
+
+        accounts[_to].currentLoan += _amount + (_amount / 6); // SO BANK MAKES BANK
+        accounts[_to].depositedEth += _amount;
+    }
+
+    function payOffLoan() public {
+        BankAccount storage userAccount = accounts[msg.sender];
+        require(userAccount.currentLoan > 0, "No outstanding loan to pay off!");
+
+        uint paymentAmount;
+
+        if (userAccount.depositedEth >= userAccount.currentLoan) {
+
+            paymentAmount = userAccount.currentLoan;
+            userAccount.depositedEth -= userAccount.currentLoan;
+            userAccount.currentLoan = 0;
+        } else {
+
+            paymentAmount = userAccount.depositedEth;
+            userAccount.currentLoan -= userAccount.depositedEth;
+            userAccount.depositedEth = 0;
+        }
+
+        // payable(address(this)).transfer(paymentAmount);
     }
 
     receive() external payable {
