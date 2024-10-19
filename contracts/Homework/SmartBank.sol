@@ -19,6 +19,12 @@ contract SmartBank {
         owner = payable(msg.sender);
     }
 
+    // modifier onlyClient() {
+    //     require(msg.sender != owner, "Only the client can deposit ETH!");
+    //     _;
+    // }
+    
+
     function depositEth() public payable {
         require(msg.sender != owner, "Only the client can deposit ETH!");
         accounts[msg.sender].depositedEth += msg.value;
@@ -26,7 +32,7 @@ contract SmartBank {
 
     function withdrawEth(uint _amount) public {
         require(msg.sender != owner, "Only the client can withdraw ETH!");
-        require(_amount <= address(this).balance, "Can't withdraw more than the bank account balance!");
+        require(_amount <= accounts[msg.sender].depositedEth, "Can't withdraw more than the bank account balance!");
 
         accounts[msg.sender].depositedEth -= _amount;
         payable(msg.sender).transfer(_amount);
@@ -89,8 +95,6 @@ contract SmartBank {
             userAccount.currentLoan -= userAccount.depositedEth;
             userAccount.depositedEth = 0;
         }
-
-        // payable(address(this)).transfer(paymentAmount);
     }
 
     receive() external payable {
