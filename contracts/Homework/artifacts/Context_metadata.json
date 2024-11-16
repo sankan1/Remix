@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Provides information about the current execution context, including the sender of the transaction and its data. While these are generally available via msg.sender and msg.data, they should not be accessed in such a direct manner, since when dealing with meta-transactions the account sending and paying for execution may not be the actual sender (as far as an application is concerned). This contract is only required for intermediate, library-like contracts.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Homework/SmartBank_flattened.sol": "Context"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Homework/SmartBank_flattened.sol": {
+			"keccak256": "0xd04ccaa58bd24a06a2f322d1555af09969d00211371f393931d5c0ed5fc5eae2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e89255b369b05eb4ddfe7c9a493047fc3ef71d0045c5092d5dd70b6ef582c1fd",
+				"dweb:/ipfs/QmQ29U75xbrBct26RfNPHgXvt3GQ8coa5f8bt31ZpuRc8g"
+			]
+		}
+	},
+	"version": 1
+}
