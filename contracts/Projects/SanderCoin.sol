@@ -10,7 +10,7 @@ contract SanderCoin is ERC20, AccessControl {
     // Event mida näeb blockchain exploreris kui kohvi osta ehk üks token burnida.
     event SanderSandered(address indexed receiver, address indexed buyer);
 
-    constructor() ERC20("SanderToken", "SAN") {
+    constructor() ERC20("SanderCoin", "SAN") {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(MINTER_ROLE, msg.sender);
     }

@@ -841,11 +841,11 @@
 			]
 		},
 		"contracts/Projects/SanderCoin.sol": {
-			"keccak256": "0xf72beed6d619095b8108c00ed5d4b3ba75ed4ffe5c375a9df3383d7ccf9ecd23",
+			"keccak256": "0xd84369f08395d25ee31ffd4b249096be58ce980599e3423d47b2b477feb5a76f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://308eff887a1ef31347cc27a8cb89f77c8202d7eb81d72e16b80e8ee0fd4d2be4",
-				"dweb:/ipfs/QmZNR9Kw8fHZFt7q3fZqXf4kbywbDDSQCH2UnNBNKuksKm"
+				"bzz-raw://1f1fe4a2402ee301461870c8974631022e027fbb036e68637de3f3b5c4849ace",
+				"dweb:/ipfs/QmVdZ3SkZNrwJ1K8ECzuryrM3MA5EtqCb8PfvC2b2DzVqu"
 			]
 		}
 	},
